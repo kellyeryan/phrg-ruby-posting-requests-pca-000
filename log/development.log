@@ -1535,3 +1535,54 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 14:53:55 -0500
+
+
+Started GET "/" for ::1 at 2020-01-27 14:56:48 -0500
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 369ms (Views: 361.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-27 15:13:10 -0500
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2020-01-27 15:13:12 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ZkFrEqlnOlwoSD0oOBqRqEbHnJyrcMONFBmjQsVeO9VqEkOZdzGBPkha/0cbMoTG3+52nrib8ELhKe+tfibhw==", "zipcode"=>"19145", "commit"=>"Search!"}
+  Rendered searches/search.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 294ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for ::1 at 2020-01-27 15:13:19 -0500
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltN+XPGEp7sThPPkLdi0XC6j5TIa892Ei/sPfN76EMEe4jL+3v39VpoEuO2RVBQJlMdCmhK8cUu0L85PYBfzqQ==", "venue_id"=>"4e74c5d5fa76059700b17e38", "tip"=>"Super cool!", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 281ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2020-01-27 15:13:20 -0500
+Processing by TipsController#index as HTML
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 165ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for ::1 at 2020-01-27 15:13:50 -0500
+Processing by TipsController#index as HTML
+  Rendered tips/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 154ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-27 15:13:53 -0500
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2020-01-27 15:13:56 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2k+1zEabw+gBrA1+bM2hIHTNu2YZljAIuANpSCU7T4xSfvluaeKZBYgsRnfQQQF1zqkczhHZnMeH16h7m9as5A==", "zipcode"=>"19145", "commit"=>"Search!"}
+  Rendered searches/search.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 214ms (Views: 23.0ms | ActiveRecord: 0.0ms)
